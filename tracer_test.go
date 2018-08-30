@@ -18,3 +18,8 @@ func TestNew(t *testing.T) {
 		}
 	}
 }
+
+func testOff(t *testing.T) {
+	silentTracer := Off()
+	silentTracer.Trace("test 1 2 3!")
+}
